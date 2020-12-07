@@ -9,14 +9,10 @@
     <% include ../partials/header.ejs %>
         <div class="paiskonteiner">
             <div class="container">
-        <div class="menuriba">
-        <div class="logo"> <img src="./matkaklubi/klubilogo.png" alt="" width="50px"> HIKING<br>CLUB</div>
+        
 
-        <div class="menu">
-           <ul> 
-               <li>HOME</li> <li>UPCOMING TREKS</li> <li>TREK FOR FAMILY</li> <li>CONTACT US</li>
-            </ul>
-        </div></div>
+        <% include ../partials/menu.ejs %>    
+    </div>
 
     <div class="row tiitliriba">
         <div class="pealkirjad col-sm-6">
@@ -45,7 +41,7 @@
                         Retk Munamäele
                     </h4>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptates veniam? Earum amet soluta beatae at sunt minima eligendi reprehenderit error commodi. Voluptatibus ipsam architecto inventore dignissimos quaerat, sed esse.</p>
-                    <a href="#" class="btn btn-primary">Registreeru</a>
+                    <a href="/registreeru/?matk=1" class="btn btn-primary">Registreeru</a>
 
                 </div>
               </div></div>
@@ -56,6 +52,7 @@
                 <h4 class="card-title">Kaks</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                <a href="/registreeru/2" class="btn btn-primary">Registreeru</a>
               </div></div></div>
               <div class="col-sm-6 col-lg-4">
                 <div class="card">
@@ -64,6 +61,7 @@
                 <h4 class="card-title">Kolm</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                <a href="/registreeru/3" class="btn btn-primary">Registreeru</a>
               </div></div>
               </div> 
             </div>
