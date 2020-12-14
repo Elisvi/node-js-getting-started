@@ -7,11 +7,13 @@
 </head>
 <body>
     <% include ../partials/header.ejs %>
+    <script src="/matkaklubi/registreeru.js"></script>
     
             <div class="container">
                 <% include ../partials/menu.ejs %>
     </div>
     <div class="container">
+        
         <div class="row">
             <form action="#" method="GET">
                 <div class="form-group">
@@ -27,10 +29,12 @@
                     <textarea class="form-control" rows="3" name="registreerujaMarkus" id="registreerujaMarkus"></textarea>
 
                 </div>
-                <input type="submit" class="btn btn-primary" value="Registreeru">
+                <input type="submit" class="btn btn-primary" value="Registreeru" onclick="return registreeru()">
             </form>
         </div>
+        
     </div>
+    <input type="hidden" id="matkIndex" name="matkIndex" value="<%= matk %>">
 </div>
 
 </body>
